@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-color: #1b1b32;
+    ;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.michazaApp-header {
+    background-color: #1b1b32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Ajusta este valor a 80vw */
+    height: 1;
+    /* Asume que la altura del encabezado es 60px */
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    height: 100vh;
+    background-color: #1b1b32;
+    margin-top: 5%;
+}
+
+.contenedor-titulo {
+    background-color: #1b1b32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Ajusta este valor a 80vw */
+    padding-top: 1%;
+}
+
+.contenedor-izquierdo,
+.contenedor-derecho {
+    background-color: rgb(255, 255, 255);
+    /* Blanco transparente */
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 50%;
+    /* Ajusta este valor a 80vw */
+    background-color: #1b1b32;
+    padding: 3%;
+}
+
+.contenedor-menu {
+    background-color: #1b1b32;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    width: 100%;
+    /* Ajusta este valor a 80vw */
+    height: 1;
+    /* Asume que la altura del encabezado es 60px */
+
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0.40%;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 12px;
+    /* Bordes redondeados */
+}
+
+
+
+h2 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 1%;
+
+}
+
+
+
+
+button {
+    background-color: #008000;
+    /* Color verde */
+    border: none;
+    border-radius: 12px;
+    /* Bordes redondeados */
+    color: #1b1b32;
+    /* Color de texto */
+    padding: 10px 20px;
+    /* Un poco más pequeños */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    /* Un poco más pequeños */
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Transición fluida */
+    margin: 3%;
+}
+
+button:hover {
+    background-color: #ffffff;
+    /* Blanco cuando el mouse está encima */
+    color: #000000;
+    /* Letra negra cuando el mouse está encima */
+}
+
+
+p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 3%;
+}
+
+
+input,
+select {
+    width: 40%;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.footer-container {
+    background-color: #040708;
+    /* Cambia el color a tu preferencia */
+    color: #fff;
+    /* Cambia el color del texto a tu preferencia */
+    text-align: center;
+    margin: -30px;
+    /* Ajusta el margen según sea necesario */
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-images img {
+    width: 100px !important;
+    /* ajusta el tamaño según tus necesidades */
+    margin: 0 0px !important;
+    /* ajusta el espacio entre las imágenes */
+}
+
+.body-text {
+    margin: 20px;
+    /* Ajusta el margen según sea necesario */
+    font-size: 18px;
+    /* Ajusta el tamaño de fuente según sea necesario */
+    color: #333;
+    /* Ajusta el color del texto según sea necesario */
+}
+
+
+.body-container {
+    display: flex;
+}
+
+.body-text {
+    flex: 1;
+    margin: 20px;
+    /* Ajusta el margen según sea necesario */
+    font-size: 18px;
+    /* Ajusta el tamaño de fuente según sea necesario */
+    color: #333;
+    /* Ajusta el color del texto según sea necesario */
+    text-align: justify;
+    /* Justificar el texto */
+    margin-top: 100px;
+}
+
+.body-image {
+    margin-right: 20px;
+    /* Ajusta el margen derecho según sea necesario */
+}
+
+.body-image img {
+    width: 500px;
+    margin-left: 200px;
+    /* Espacio entre la columna de texto y la imagen */
+    margin-top: 30px;
+    max-width: 100%
+}
+
+.additional-images img {
+    margin-left: 30px;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)),url(../Images/bst.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  :root {
+    --carousel-indicator-width: 30px;
+    --carousel-indicator-height: 3px;
+    --carousel-indicator-hit-area-height: 10px;
+    --carousel-indicator-spacer: 3px;
+    --carousel-indicator-opacity: .5;
+    --carousel-indicator-active-bg: white;
+    --carousel-indicator-active-opacity: 1;
+    --carousel-indicator-transition: opacity .6s ease;
+    --carousel-caption-width: 70%;
+    --carousel-caption-color: white;
+    --carousel-caption-padding-y: 1.25rem;
+    --carousel-caption-spacer: 1.25rem;
+    --carousel-control-icon-width: 2rem;
+    --carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var(--carousel-control-color)'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+    --carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var(--carousel-control-color)'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+    --carousel-transition-duration: .6s;
+    --carousel-transition: transform var(--carousel-transition-duration) ease-in-out;
+  }
